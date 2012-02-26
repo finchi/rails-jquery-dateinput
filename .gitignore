@@ -1,0 +1,10 @@
+.bundle
+.rvmrc
+.powder
+spec/dummy/db/*.sqlite3
+spec/dummy/log/*.log
+spec/dummy/tmp/
+.idea/*
+Gemfile.lock
+spec/dummy/config/database.yml
+spec/dummy/public/system
