@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require rails-jquery-dateinput
 //= require_tree .
