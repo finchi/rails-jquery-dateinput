@@ -1,25 +1,5 @@
-<%= form_for(@reminder) do |f| %>
-  <% if @reminder.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@reminder.errors.count, "error") %> prohibited this reminder from being saved:</h2>
-
-      <ul>
-      <% @reminder.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :message %><br />
-    <%= f.text_field :message %>
-  </div>
-  <div class="field">
-    <%= f.label :date %><br />
-    <%= f.datetime_select :date %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<%= simple_form_for(@reminder) do |f| %>
+    <%= f.input :message %>
+    <%= f.input :date, wrapper_html: { :'data-max' => Time.now }  %>
+    <%= f.button :submit %>
 <% end %>
