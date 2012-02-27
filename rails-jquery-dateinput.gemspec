@@ -7,11 +7,11 @@ require "rails-jquery-dateinput/version"
 Gem::Specification.new do |s|
   s.name        = "rails-jquery-dateinput"
   s.version     = RailsJqueryDateinput::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of RailsJqueryDateinput."
-  s.description = "TODO: Description of RailsJqueryDateinput."
+  s.authors     = ["Christian Finck"]
+  s.email       = ["christian@finck.at"]
+  s.homepage    = "https://github.com/finchi/rails-jquery-dateinput"
+  s.summary     = "jQuery tools dateinput for Rails date selects"
+  s.description = "Replaces the selects, created by the rails date input helper, with a jQuery tools dateinput"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
